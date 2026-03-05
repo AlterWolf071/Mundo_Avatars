@@ -1,16 +1,63 @@
 <html>
-<head><title>VRChat Remote Image Loading Assets</title></head>
+<head>
+    <title>VRChat Remote Image Loading Assets</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .caption-link {
+            display: block;
+            margin-bottom: 20px;
+            color: #00ffcc;
+            text-decoration: none;
+        }
+
+        /* Contenedor de la cuadrícula */
+        .grid-container {
+            display: grid;
+            /* Crea 2 columnas de igual tamaño */
+            grid-template-columns: repeat(2, 1fr); 
+            /* Espacio entre las imágenes */
+            gap: 15px; 
+        }
+
+        /* Ajuste de las imágenes */
+        .grid-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 2px solid #333;
+        }
+
+        /* Opcional: Si lo ves en móvil muy pequeño, 
+           esto hará que sea 1 por fila en pantallas estrechas */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
 <body>
-    <a href="captions.csv">Image Captions</a>
-    <img src="1.jpg" />
-    <img src="2.jpg" />
-    <img src="3.jpg" />
-    <img src="4.jpg" />
-    <img src="5.jpg" />
-    <img src="6.jpg" />
-    <img src="7.jpg" />
-    <img src="8.jpg" />
-    <img src="9.jpg" />
-    <img src="10.jpg" />
+
+    <a href="captions.csv" class="caption-link">Image Captions</a>
+
+    <div class="grid-container">
+        <img src="1.png" />
+        <img src="2.png" />
+        <img src="3.png" />
+        <img src="4.png" />
+        <img src="5.png" />
+        <img src="6.png" />
+        <img src="7.png" />
+        <img src="8.png" />
+        <img src="9.png" />
+        <img src="10.png" />
+    </div>
+
 </body>
 </html>
