@@ -9,13 +9,6 @@
             padding: 20px;
         }
 
-        .caption-link {
-            display: block;
-            margin-bottom: 20px;
-            color: #00ffcc;
-            text-decoration: none;
-        }
-
         /* Contenedor de la cuadrícula */
         .grid-container {
             display: grid;
@@ -33,8 +26,7 @@
             border: 2px solid #333;
         }
 
-        /* Opcional: Si lo ves en móvil muy pequeño, 
-           esto hará que sea 1 por fila en pantallas estrechas */
+        /* Ajuste para móviles */
         @media (max-width: 600px) {
             .grid-container {
                 grid-template-columns: 1fr;
@@ -43,8 +35,6 @@
     </style>
 </head>
 <body>
-
-    <a href="captions.csv" class="caption-link">Image Captions</a>
 
     <div class="grid-container">
         <img src="1.png" />
